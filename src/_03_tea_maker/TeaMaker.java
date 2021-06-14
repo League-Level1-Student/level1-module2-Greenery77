@@ -8,6 +8,25 @@ public class TeaMaker {
 
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
 
+	
+	public static void main(String[] args) {
+		
+		TeaBag bag = new TeaBag("Chamomile");
+		
+		Kettle ket = new Kettle();
+		
+		Cup cup = new Cup();	
+
+		bag.getFlavor();
+		
+		ket.getWater();
+		
+		ket.boil();  
+		
+		cup.makeTea(bag, );
+		
+	}
+	
 }
 
 class TeaBag {
