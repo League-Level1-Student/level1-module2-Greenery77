@@ -1,4 +1,7 @@
 package _03_tea_maker;
+
+import _03_tea_maker.Kettle.Water;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
@@ -16,15 +19,14 @@ public class TeaMaker {
 		Kettle ket = new Kettle();
 		
 		Cup cup = new Cup();	
-
-		bag.getFlavor();
 		
-		ket.getWater();
+		String flavor = bag.getFlavor();
 		
-		ket.boil();  
+		ket.boil(); 
 		
-		cup.makeTea(bag, );
+		Water wat = ket.getWater();
 		
+		cup.makeTea(bag, wat);
 	}
 	
 }
